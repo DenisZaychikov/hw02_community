@@ -5,7 +5,7 @@
 {% block content %}
   <h1>{{ group.title|linebreaks }}</h1>
   <p>
-    {{ group.description }}
+    {{ group.description|linebreaks }}
   </p>
   {% for post in posts %}
     <article>

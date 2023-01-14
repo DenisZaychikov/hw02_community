@@ -39,7 +39,7 @@ class Post(models.Model):
     class Meta:
         verbose_name = 'пост'
         verbose_name_plural = 'посты'
-        ordering = ['-pub_date']
+        ordering = ('-pub_date',)
 
     def __str__(self):
         return self.text[:settings.TEXT_FIELD_LENGTH]
